@@ -20,9 +20,9 @@ Route::get('/', function () {
 Route::get('/dashboard',function (){
     return view('admin.dashboard.index');
 });
-Route::get('/home',function (){
+Route::get('/clients',function (){
     return view('client.layouts.app');
 });
 Auth::routes();
 
-//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
